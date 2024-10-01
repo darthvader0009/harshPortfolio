@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ProjectCardComponent } from '../project-card/project-card.component';
+import { Project } from '../models/ProjectCardModel';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -9,7 +10,16 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent {
+  project: Project = {
+    id: 0,
+    name: "Sample Angular App",
+    summary: "Test Description",
+    description: '',
+    projectLink:'',
+    tags: ['Angular', 'TypeScript'],
+    pictures: []
+  }
   constructor(private titleService: Title){
-    this.titleService.setTitle('Harsh Sharma - Portfolio')
+    this.titleService.setTitle('Harsh Sharma - Portfolio');
   }
 }
