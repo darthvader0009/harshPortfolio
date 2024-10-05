@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { Project } from '../models/ProjectCardModel';
+import { Tag } from '../models/TagModel';
 @Component({
   selector: 'app-portfolio',
   standalone: true,
@@ -16,7 +17,7 @@ export class PortfolioComponent {
     summary: "Test Description",
     description: '',
     projectLink:'',
-    tags: ['Angular', 'TypeScript'],
+    tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
     pictures: []
   }
   constructor(private titleService: Title){

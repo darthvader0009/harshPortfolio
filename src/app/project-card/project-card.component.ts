@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Project } from '../models/ProjectCardModel';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.css'
 })
