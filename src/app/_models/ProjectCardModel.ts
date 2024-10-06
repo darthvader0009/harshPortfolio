@@ -1,6 +1,4 @@
-import { Tag } from "./TagModel";
-
-
+import { Tag } from "./TagModel"
 export interface Project {
     id: number;
     name: string;

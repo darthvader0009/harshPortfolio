@@ -1,15 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Project } from '../_models/ProjectCardModel';
+import { ProjectsService } from '../_services/projects-service';
+import { ProjectCardComponent } from "../project-card/project-card.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [ProjectCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent {
-  constructor(private titleService: Title){
-    this.titleService.setTitle('Harsh Sharma - Home')
+export class HomeComponent implements OnInit{
+  featuredProject!: Project;
+  constructor(private titleService: Title, private projectService: ProjectsService){
+    this.titleService.setTitle('Harsh Sharma - Home');
+  }
+  ngOnInit(): void {
+    this.featuredProject = this.projectService.GetProjectById(0);
   }
 }
