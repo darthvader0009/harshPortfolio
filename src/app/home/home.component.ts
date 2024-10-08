@@ -1,3 +1,5 @@
+import { NgFor } from '@angular/common';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Project } from '../_models/ProjectCardModel';
@@ -7,7 +9,7 @@ import { ProjectCardComponent } from "../project-card/project-card.component";
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ProjectCardComponent],
+  imports: [ProjectCardComponent, CarouselModule, NgFor],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

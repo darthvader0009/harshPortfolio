@@ -14,8 +14,16 @@
         </div>
         <div class="col-lg shadow border m-1">
             <div class="text-center">
-                <H2>Featured Project</H2>
-                <app-project-card [project]="featuredProject"></app-project-card>
+                <h2>Featured Project</h2>
+                <h3>{{featuredProject.name}}</h3>
+
+                <carousel>
+                    <div *ngFor="let picture of featuredProject.pictures">
+                      <slide><img src= {{picture}} alt="image1" style="display: block; width: 100%" /></slide>
+                    </div>
+                </carousel>
+                <p class="mt-2">{{featuredProject.summary}}</p>
+                <p class="mt-2">Visit the Portfolio section to learn more.</p>
             </div>
         </div>
     </div>
