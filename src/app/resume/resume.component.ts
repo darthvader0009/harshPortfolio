@@ -12,6 +12,11 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
 export class ResumeComponent {
 
   isWorkExperienceOpen : boolean = false;
+  isEducationOpen: boolean = false;
+  isCertificationsOpen: boolean = false;
+  isTechnicalSkillsOpen: boolean = false;
+  isExtraSkillsOpen: boolean = false;
+  
   constructor(private titleService: Title, private renderer : Renderer2){
     this.titleService.setTitle('Harsh Sharma - Resume')
   }
