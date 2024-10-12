@@ -5,11 +5,12 @@ import { Title } from '@angular/platform-browser';
 import { Project } from '../_models/ProjectCardModel';
 import { ProjectsService } from '../_services/projects-service';
 import { ProjectCardComponent } from "../project-card/project-card.component";
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [ProjectCardComponent, CarouselModule, NgFor],
+  imports: [ProjectCardComponent, CarouselModule, NgFor, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

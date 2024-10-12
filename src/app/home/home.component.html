@@ -1,30 +1,45 @@
 <div class="container">
     <div class="row">
         <!-- About me -->
-        <div class="col-lg shadow border m-1">
+        <div class="col-lg-6 shadow border p-3">
             <div class="text-center">
-                <h2>About me</h2>
+                <h2 style="margin-top: 2%;">About me</h2>
                 <img src="/Harsh.jpg" alt="Profile Picture" width="256" height="256" class="rounded-circle">
                 <p class="about">
-                    Adobe Certified Expert AEM Developer with 3 years of experience in AEM development using AEM 6.5. Experience in working with AEM architecture, Sightly (HTL), JSP, Sling Models, Servlets, OSGI Servlets, Dispatcher Configurations, JavaScript, jQuery, HTML, CSS. Experienced with CI/CD pipelines, Azure DevOps, and working in Agile environment using SCRUM principles.
-                    Hands-on experience in integrating AEM with SPA like Angular and React. Trained in MEAN stack. Working knowledge of headless CMS and AEMaaCS. Experienced in using AEM Multi-Site Management (MSM) to develop Live copies, Language copies and Blueprints. Strong experience with the usage of Digital Asset Management (DAM) and Dispatcher for caching and load balancing.
-                    During my previous role as a Senior System Engineer at Infosys, I worked for clients like Ford UK and Rite Aid Corporations. I helped develop and maintain their websites using CMS tools like Adobe Experience Manager, and contributed to the project delivery on time and within budget.
+                    <em>
+                        I am an Adobe Certified Expert AEM Developer with over 3 years of hands-on experience in AEM 6.5 development. 
+                        My expertise includes working with AEM architecture, Sightly (HTL), 
+                        JSP, Sling Models, Servlets (including OSGI), Dispatcher configurations, and front-end technologies like JavaScript, jQuery, HTML, and CSS.
+                    </em>
+                </p>
+                <p class="about">
+                    <em>I have a strong background in CI/CD pipelines and Azure DevOps, and I have consistently worked in Agile environments following SCRUM methodologies. 
+                        I have successfully integrated AEM with Single Page Applications (SPA) frameworks such as Angular and React. 
+                    </em>
+                </p>
+                <p class="about">
+                    <em>
+                        Additionally, I have been trained in the MEAN stack and possess working knowledge of headless CMS and AEM as a Cloud Service (AEMaaCS). 
+                        My experience extends to AEM Multi-Site Management (MSM), where I have created and maintained live copies, language copies, and blueprints. 
+                    </em>
+                    
                 </p>
             </div>
         </div>
-        <div class="col-lg shadow border m-1">
+        <div class="col-lg-6 shadow border p-3">
             <div class="text-center">
                 <h2>Featured Project</h2>
+                <hr>
                 <h3>{{featuredProject.name}}</h3>
                 <br><br><br>
                 <carousel class="carousel-component">
                     <div *ngFor="let picture of featuredProject.pictures">
-                      <slide><img src= {{picture}} alt="image1" style="display: block; width: 100%" /></slide>
+                      <slide><img src= {{picture}} alt="image1"/></slide>
                     </div>
                 </carousel>
                 <br><br>
-                <p class="mt-2">{{featuredProject.summary}}</p>
-                <p class="mt-2">Visit the Portfolio section to learn more.</p>
+                <p class="mt-2 about" style="text-align: center;"><em>{{featuredProject.summary}}</em></p>
+                <p class="mt-2 about" style="text-align: center;"><em>Visit the <a class = 'text-primary' routerLink="/portfolio">portfolio</a> section to learn more.</em></p>
             </div>
         </div>
     </div>
