@@ -1,0 +1,41 @@
+/* Navbar Styles */
+.navbar-expand-md {
+    background-color: #333; /* Dark background like the footer */
+    border-bottom: 2px solid #00703c; /* Add a green bottom border */
+    padding: 15px 0;
+}
+
+/* Navbar links: styled to match the footer */
+.navbar-expand-md .nav-link {
+    color: #fff; /* White text color */
+    margin: 0 15px; /* Spacing between links */
+    text-decoration: none; /* No underline */
+    font-size: 16px; /* Same font size as footer */
+    font-weight: bold; /* Make links bold to match footer */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+/* Hover effect similar to footer */
+.navbar-expand-md .nav-link:hover {
+    color: #00703c; /* Green on hover */
+    transform: scale(1.1); /* Slight scaling effect */
+}
+
+/* Active link styling to match footer */
+.navbar-expand-md .nav-link.text-dark {
+    color: #00703c; /* Active link highlighted in green */
+    font-weight: bold; /* Bold active link */
+}
+
+/* Center the navbar items */
+.navbar-expand-md .nav {
+    justify-content: center;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .navbar-expand-md .nav-link {
+        font-size: 14px; /* Slightly smaller font for mobile */
+        margin: 10px 0; /* Add space between links on small screens */
+    }
+}

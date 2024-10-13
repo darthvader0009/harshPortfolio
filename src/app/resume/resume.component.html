@@ -1,7 +1,7 @@
 <div class="container text-center">
-    <button (click)="DownloadFile()" class="btn btn-primary mb-5 mt-5 shadow border">Download PDF resume</button>
+    <button (click)="DownloadFile()" class="btn mb-5 mt-5 shadow border" style="background-color: #00703c; color: white;">Download PDF resume</button>
     <div class="pb-2">
-        <accordion [isAnimated]="true" class="shadow">
+        <accordion [isAnimated]="true" class="shadow" style="margin-bottom: 2%;">
             <accordion-group [(isOpen)]="isWorkExperienceOpen">
                 <button class="btn btn-block justify-content-between d-flex w-100" accordion-heading>
                     <div style="visibility: hidden;"></div>
@@ -13,7 +13,7 @@
                 </button>
                 <div style="text-align: left;">
                     <h2 class="mb-0">Senior Systems Engineer/Web Developer</h2>
-                    <h3 class="text-primary">Infosys Limited</h3>
+                    <h4 class="company">Infosys Limited</h4>
                     <ul>
                         <li>Served as a UI & AEM resource on a Project for Rite Aid Corporations.</li>
                         <li>Actively worked on both client-side and server-side development with a focus on performance optimization and security.</li>
@@ -41,7 +41,7 @@
                 </button>
                 <div style="text-align: left;">
                     <h2 class="mb-0">Post Graduate Diploma in Supply Chain Managment - Global Logistics</h2>
-                    <h3 class="text-primary">Seneca College, Canada</h3>
+                    <h4 class="company">Seneca College, Canada</h4>
                     <ul>
                         <li>Graduated from Seneca College in April 2024.</li>
                         <li>Graduated with a 3.4 GPA</li>
@@ -51,7 +51,7 @@
     
                 <div style="text-align: left;">
                     <h2 class="mb-0">Post Graduate Diploma in Project Management - IT</h2>
-                    <h3 class="text-primary">Seneca College, Canada</h3>
+                    <h4 class="company">Seneca College, Canada</h4>
                     <ul>
                         <li>Graduated from Seneca College in September 2023.</li>
                         <li>Graduated with a 3.7 GPA</li>
@@ -62,7 +62,7 @@
                 
                 <div style="text-align: left;">
                     <h2 class="mb-0">Bachelor Of Engineering - Mechanical</h2>
-                    <h3 class="text-primary">Sant Longowal Institute of Engineering & Technology, India</h3>
+                    <h4 class="company">Sant Longowal Institute of Engineering & Technology, India</h4>
                     <ul>
                         <li>Graduated from SLIET in May 2019.</li>
                         <li>Graduated with a 8.04/10 GPA</li>
@@ -80,7 +80,7 @@
                     </div>
                 </button>
                 <div style="text-align: left;">
-                    <h3 class="text-primary">Adobe Experience Manager (AEM) Sites Developer Expert</h3>
+                    <h4>Adobe Experience Manager (AEM) Sites Developer Expert</h4>
                     <ul>
                         <li><h6>Issued by - Adobe</h6></li>
                         <li>Obtained January, 2024</li>
@@ -90,7 +90,7 @@
                 </div>
     
                 <div style="text-align: left;">
-                    <h3 class="text-primary">Scrum Fundamentals Certified (SFC™)</h3>
+                    <h4>Scrum Fundamentals Certified (SFC™)</h4>
                     <ul>
                         <li><h6>Issued by - SCRUMstudy</h6></li>
                         <li>Obtained April 27, 2023</li>
@@ -100,7 +100,7 @@
                 </div>
     
                 <div style="text-align: left;">
-                    <h3 class="text-primary">Fundamentals of Agile Project Management</h3>
+                    <h4>Fundamentals of Agile Project Management</h4>
                     <ul>
                         <li><h6>Issued by - Project Management Institute</h6></li>
                         <li>Obtained July 06, 2023</li>
@@ -109,7 +109,7 @@
                 </div>
     
                 <div style="text-align: left;">
-                    <h3 class="text-primary">JavaScript Essentials Training</h3>
+                    <h4>JavaScript Essentials Training</h4>
                     <ul>
                         <li><h6>Issued by - Linkedin Learning</h6></li>
                         <li>Obtained January 24, 2024</li>
@@ -118,7 +118,7 @@
                 </div>
     
                 <div style="text-align: left;">
-                    <h3 class="text-primary">React.js Essentials Training</h3>
+                    <h4>React.js Essentials Training</h4>
                     <ul>
                         <li><h6>Issued by - Linkedin Learning</h6></li>
                         <li>Obtained February 5, 2024</li>
@@ -127,7 +127,7 @@
                 </div>
     
                 <div style="text-align: left;">
-                    <h3 class="text-primary">Microsoft Certified: Azure Administrator Associate</h3>
+                    <h4>Microsoft Certified: Azure Administrator Associate</h4>
                     <ul>
                         <li><h6>Issued by - Microsoft</h6></li>
                         <li>Obtained March 16, 2023</li>
@@ -146,7 +146,7 @@
                 </button>
                 <div class="row" style = "text-align: left;">
                     <div class="col">
-                        <h3>Programming Languages:</h3>
+                        <h4 class="company">Programming Languages:</h4>
                         <ul>
                             <li>HTML</li>
                             <li>CSS</li>
@@ -159,7 +159,7 @@
                         </ul>
                     </div>
                     <div class="col">
-                        <h3>Frameworks, libraries and tools:</h3>
+                        <h4 class="company">Frameworks, libraries and tools:</h4>
                         <ul>
                             <li>Adobe Experience Manager</li>
                             <li>Angular</li>
@@ -175,7 +175,7 @@
                         </ul>
                     </div>
                     <div class="col">
-                        <h3>Other Skills:</h3>
+                        <h4 class="company">Other Skills:</h4>
                         <ul>
                             <li>Source and Version Control Systems like Git</li>
                             <li>MVC Architecture</li>

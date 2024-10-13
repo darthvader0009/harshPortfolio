@@ -1,7 +1,17 @@
+.container {
+    background-image: none;
+}
+
 accordion-group::ng-deep .btn-link {
     color: white;
 }
 
 accordion-group::ng-deep .card-header {
-    background-color: #007bff;
+    background-color: #00703c;
+}
+
+.company {
+    font-family:  "Public Sans", Verdana, arial, sans-serif !important;
+    color: blueviolet;
+    margin-top: 10px;
 }

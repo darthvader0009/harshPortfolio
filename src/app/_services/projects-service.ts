@@ -15,7 +15,7 @@ export class ProjectsService {
       summary:
         'AEM based website to schedule vaccines, refill prescritions etc.',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        "During my time at Infosys, I was a key contributor to the development of the Rite Aid website, focusing on both client-side and server-side optimization. My role involved building and maintaining features such as the prescription refill system and the COVID-19 vaccination scheduler, ensuring a seamless user experience. I implemented custom AEM components integrated with HTML, jQuery, HandlebarJS, and CSS, enhancing the site's functionality and performance. I also worked closely with business stakeholders to align project deliverables with their requirements, contributing to over 50 successful releases. This project deepened my expertise in AEM 6.5 and solidified my understanding of agile development practices.",
       tags: [Tag.AEM, Tag.ANGULAR, Tag.TYPESCRIPT, Tag.HTL],
     },
     {
@@ -23,9 +23,9 @@ export class ProjectsService {
       name: 'Ford UK Project',
       pictures: ['forduk/photo1.jpg', 'forduk/photo2.jpg', 'forduk/photo3.jpg'],
       projectLink: 'https://www.ford.co.uk/',
-      summary: 'Fullstack web app developed using Angular and Node.JS',
+      summary: 'Website developed using AEM, React and Node.JS',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        'As part of the Infosys team, I contributed to the development and maintenance of the Ford UK website, which utilized Adobe Experience Manager (AEM) for content management and React for dynamic user interfaces. I assisted in integrating AEM components with React, ensuring smooth content delivery and enhancing user engagement. I also collaborated with cross-functional teams to ensure the consistency of the content across various pages, while adhering to Ford’s global brand guidelines.',
       tags: [Tag.ANGULAR, Tag.TYPESCRIPT, Tag.JAVASCRIPT, Tag.CSS],
     },
     {

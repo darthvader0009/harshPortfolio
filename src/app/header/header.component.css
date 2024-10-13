@@ -1,4 +1,38 @@
-.jumbotron{
-    padding: 2rem 1rem;
-    background-color: #e9ecef;
+
+.jumbotron-custom {
+    background-image: url('/background-images/background.jpeg');  /* Background image */
+    background-size: cover;                   
+    background-position: center;              /* Center the image */
+    background-repeat: no-repeat;             /* Do not repeat the image */
+    color: white;
+    height: 50vh;                            /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 15px;
+    display: flex; /* Use flexbox for alignment */
+    gap
+
+}
+
+@media (max-width: 768px) {
+    .social-icons {
+        position: static;
+        gap: 15px; /* Reduce space between icons on smaller screens */
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        
+    
+    }
+    .jumbotron-custom {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center content vertically */
+        padding-bottom: 20px; /* Adjust padding for mobile */
+    }
 }

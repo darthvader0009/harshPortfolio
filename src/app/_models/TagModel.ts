@@ -2,7 +2,7 @@ export class Tag {
   static readonly ANGULAR = new Tag('Angular', '#BDAA00');
   static readonly TYPESCRIPT = new Tag('TypeScript', 'darkred');
   static readonly JAVASCRIPT = new Tag('JavaScript', 'pink');
-  static readonly AEM = new Tag('Adobe Experience Manager', 'red');
+  static readonly AEM = new Tag('AEM', 'red');
   static readonly CSS = new Tag('CSS', 'green');
   static readonly JAVA = new Tag('Java', 'orange');
   static readonly NODEJS = new Tag('Node.JS', 'brown');

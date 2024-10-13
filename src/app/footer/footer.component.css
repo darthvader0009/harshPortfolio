@@ -1,0 +1,63 @@
+.footer {
+    background-color: #333; /* Dark background for contrast */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding around the footer content */
+    text-align: center; /* Center align all text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer nav {
+    margin-bottom: 15px; /* Space between the links and icons */
+}
+
+.footer .link {
+    color: #fff; /* White links for contrast */
+    margin: 0 15px; /* Spacing between links */
+    text-decoration: none; /* Remove default underline */
+    font-size: 16px; /* Font size for the links */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.footer .link:hover {
+    color: #00703c; /* Change color on hover (same as your theme color) */
+}
+
+.footer .footer-icons {
+    margin-bottom: 15px; /* Space between icons and text */
+}
+
+.footer .footer-icons .link img {
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.footer .footer-icons .link:hover img {
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+
+.footer p {
+    margin: 10px 0; /* Space between paragraphs */
+    font-size: 14px; /* Font size for copyright and info text */
+}
+
+.footer p.text-center {
+    font-size: 12px; /* Slightly smaller size for the copyright notice */
+    margin-top: 10px;
+    color: #bbb; /* Light grey color for subtle contrast */
+}
+
+/* Ensure the footer is sticky if the content is short */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: auto; /* Push footer to bottom */
+}
