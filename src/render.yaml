@@ -1,0 +1,9 @@
+version: 1
+services:
+  - type: web
+    name: harshsharma # Replace with the name of your service
+    buildCommand: ng build
+    publishDir: dist/harsh-portfolio/browser # Replace with the path to your built files
+    routes:
+      - src: /*
+        dest: index.html
