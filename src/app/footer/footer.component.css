@@ -61,3 +61,12 @@ body {
 .footer {
     margin-top: auto; /* Push footer to bottom */
 }
+
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .navbar-expand-md .nav-link {
+        font-size: 14px; /* Slightly smaller font for mobile */
+        margin: 10px 0; /* Add space between links on small screens */
+    }
+}

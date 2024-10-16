@@ -1,0 +1,10 @@
+@media (max-width: 576px) {
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .row > div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

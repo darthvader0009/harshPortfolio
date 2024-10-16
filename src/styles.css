@@ -13,3 +13,22 @@
     background-color: blue;
     color: white;
 }
+
+
+/* Customizing the Previous arrow */
+.carousel-control-prev-icon {
+    background-image: url('/logos/leftIcon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* Adjust as necessary */
+    height: 50px;
+}
+
+/* Customizing the Next arrow */
+.carousel-control-next-icon {
+    background-image: url('/logos/rightIcon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px; /* Adjust as necessary */
+    height: 50px;
+}
